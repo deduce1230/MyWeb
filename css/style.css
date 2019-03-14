@@ -7,25 +7,6 @@ margin:0;
 color:#313131;
 }
 
-a{
-    color:darkblue;
-    -webkit-transition: all 0.5s;
-    -moz-transition: all 0.5s;
-    transition: all 0.5s;
-}
-a:visited{
-    color:blue;
-    -webkit-transition: all 0.5s;
-    -moz-transition: all 0.5s;
-    transition: all 0.5s;
-}
-a:hover {
-    color: #F5A862;
-    -webkit-transition: all 0.5s;
-    -moz-transition: all 0.5s;
-    transition: all 0.5s;
-}
-
 /*****HEADER*****/
 header{
     display: block;
@@ -84,12 +65,13 @@ nav ul{
 nav li{
 //	width: calc(100% / 4);	/*横幅の指定*/
 	border-left: 1px solid silver;	/*線を描く*/
+  border-bottom: 1px solid silver;	/*li要素の最後の物は右側に線を描く*/
 	box-sizing: border-box; /*線の幅をliの横幅に含める*/
 	text-align: center;	/*文字を中央に*/
 //	float: left;	/*左から並べる*/
 }
 nav li:last-child{
-	border-right: 1px solid silver;	/*li要素の最後の物は右側に線を描く*/
+	border-bottom: 2px solid silver;	/*li要素の最後の物は右側に線を描く*/
 }
 nav a{
 	display: block;	/*1つのli全体にリンクを有効にする*/
@@ -113,17 +95,16 @@ nav a:visited{
 
 div#contents {
 //background-color: #99cc33;
-width: 760px;
-overflow: hidden;
+//width: 760px;
+overflow:auto;
 }
 
 div#main {
 //background-color: #99cc33;
 //width: 760px;
-overflow: hidden;
+//overflow: hidden;
 //float: right;
 }
-
 
 footer{
     font-size: 80%;
