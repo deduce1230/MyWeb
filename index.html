@@ -6,6 +6,7 @@
   <link href="css/reset.css" rel="stylesheet" type="text/css">
   <link href="css/style.css" rel="stylesheet" type="text/css">
   <link href="css/toggle.css" rel="stylesheet" type="text/css">
+  <link href="css/calender-style.css" rel="stylesheet" type="text/css">
 </head>
 
 <body>
@@ -34,6 +35,25 @@
     トグルボタン押下
   </div>
 -->
+
+<!-- カレンダー START -->
+<div id="calender-test">
+
+<div id="mini-calendar">
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.12.3/jquery.min.js"></script>
+<script src="js/jquery.minicalendar.js"></script>
+<script type="text/javascript">
+(function($) {
+	$(function() {
+		$('#mini-calendar').miniCalendar();
+	});
+})(jQuery);
+</script>
+</div>
+
+</div>
+<!-- カレンダー END -->
+
 
 </div><!-- /.toggle-wrap -->
 
