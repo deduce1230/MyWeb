@@ -3,6 +3,10 @@
 /* ========================================
  * #mini-calendar
  * ========================================*/
+ #mini-calender {
+   background: #fff;
+   align:center;
+ }
  #mini-calendar .calendar-year-month {
  	text-align: center;
  	font-size: 24px;
