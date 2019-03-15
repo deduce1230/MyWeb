@@ -5,7 +5,18 @@
   <title>Web Management System</title>
   <link href="css/reset.css" rel="stylesheet" type="text/css">
   <link href="css/style.css" rel="stylesheet" type="text/css">
+  <link href="css/calender-style.css" rel="stylesheet" type="text/css">
 </head>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.12.3/jquery.min.js"></script>
+<script src="./js/jquery.minicalendar.js"></script>
+<script type="text/javascript">
+(function($) {
+  $(function() {
+    $('#mini-calendar').miniCalendar();
+  });
+})(jQuery);
+</script>
 
 <body>
 <header>
@@ -25,10 +36,15 @@
 </nav>
 
 <div id="main">
-　内容
-</div>
 
-</div>
+<!-- カレンダースタート -->
+	<div id="mini-calendar"></div>
+<!-- カレンダーエンド-->
+
+</div><!-- main -->
+
+
+</div><!-- contents -->
 
 <footer>
 <small>Copyright(C) N.Yamashita,Allright Reserved.</small>
