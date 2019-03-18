@@ -35,7 +35,6 @@ header{
     background-color: #333631;
 }
 header h1{
-//    background-color: lightsteelblue;
     margin-top: 5px;
     margin-bottom: 5px;
     float: left;
@@ -45,14 +44,14 @@ header h1{
     padding-bottom: 5px; /*文字下部に余白*/
     padding-left: 20px; /*文字左側に余白*/
     padding-right: 20px; /*文字右側に余白*/
-//    border:1px solid #313131; /*文字の周りに線を描く*/
-//    border-radius: 5px; /*線の角に丸みを付ける*/
     letter-spacing: 3px; /*文字と文字の間隔をあける*/
     font-weight:400; /*文字の太さの変更*/
+    //    border:1px solid #313131; /*文字の周りに線を描く*/
+    //    border-radius: 5px; /*線の角に丸みを付ける*/
 }
 
 
-#version{
+div#version{
     float: left;
     font-size:90%; /*フォントサイズの調整*/
     color:lightgray; /*文字色の変更*/
@@ -65,6 +64,35 @@ header h1{
     vertical-align: bottom;
 }
 
+div#user_info{
+    float: right;
+    font-size:90%; /*フォントサイズの調整*/
+    color:lightgray; /*文字色の変更*/
+    padding-top: 5px; /*文字上部に余白*/
+    padding-bottom: 0px; /*文字下部に余白*/
+    padding-left: 20px; /*文字左側に余白*/
+    padding-right: 20px; /*文字右側に余白*/
+    letter-spacing: 3px; /*文字と文字の間隔をあける*/
+    font-weight:400; /*文字の太さの変更*/
+    box-sizing: border-box;/*padding入れた時の回り込み防止*/
+}
+
+.profile-ava img{
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border: 2px solid #688a7e;
+    display: inline-block;
+    float:left;
+}
+
+.profile-name {
+    //border: 2px solid #688a7e;
+    //display: inline-block;
+    padding-top: 10px; /*文字下部に余白*/
+    padding-left: 5px; /*文字左側に余白*/
+    float:left;
+    //vertical-align:middle;
+}
 
 /*****NAV*****/
 nav{
@@ -114,7 +142,6 @@ nav a:visited{
 }
 
 div#contents {
-
   //background-color: #99cc33;
   //width: 760px;
   overflow: hidden;
@@ -132,7 +159,9 @@ div#center {
 //  background-color: #99cc33;
   width: 80%;
   overflow: hidden;
-//  float: right;
+  box-sizing: border-box;/*padding入れた時の回り込み防止*/
+  padding-left: 5px; /*文字左側に余白*/
+  float: left;
 }
 
 div#side-right {
@@ -144,6 +173,7 @@ div#side-right {
   overflow: hidden;
   float: right;
 }
+
 
 footer{
   font-size: 80%;
